@@ -33,10 +33,14 @@ func main() {
 	fmt.Println("Hello, world.")
 	fmt.Println("The current time is ", time.Now())
 	// let play with random number... (not very random??)
+	rand.Seed(10)
 	fmt.Println("Random integer ", rand.Intn(10), " pi=", math.Pi)
 	fmt.Println("1+2=", add(1, 2))
 	a, b := swap("hello", "world")
 	fmt.Println(a, b)
 
 	fmt.Println(split(23))
+
+	k, v := 2, "lala"
+	fmt.Println("k is ", k, " and v is ", v)
 }
